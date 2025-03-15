@@ -13,7 +13,7 @@ services:
       - ./master-init.sql:/docker-entrypoint-initdb.d/master-init.sql
     command: >
       -c wal_level=logical
-      -c max_replication_slots=10
+      -c max_replication_slots=20
       -c max_wal_senders=10
 
   replica:
