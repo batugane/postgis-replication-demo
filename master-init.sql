@@ -1,4 +1,3 @@
--- master-init.sql
 CREATE EXTENSION IF NOT EXISTS postgis;
 
 -- Create a table of cities with a point geometry
