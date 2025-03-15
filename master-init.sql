@@ -16,5 +16,6 @@ CREATE TABLE roads (
     city_id INT REFERENCES cities(id)
 );
 
--- Create a publication for logical replication on all tables
-CREATE PUBLICATION my_publication FOR ALL TABLES;
+-- Create a publication for only your custom tables:
+DROP PUBLICATION IF EXISTS my_publication;
+CREATE PUBLICATION my_publication FOR TABLE cities, roads;

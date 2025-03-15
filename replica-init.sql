@@ -14,4 +14,3 @@ CREATE TABLE IF NOT EXISTS roads (
     geom GEOMETRY(LineString, 4326) NOT NULL,
     city_id INT
 );
-\
