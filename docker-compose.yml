@@ -1,6 +1,6 @@
 services:
   master:
-    image: postgis/postgis:17-3.3
+    image: postgis/postgis:17-3.5
     container_name: pg_master
     environment:
       - POSTGRES_USER=postgres
@@ -17,7 +17,7 @@ services:
       -c max_wal_senders=10
 
   replica:
-    image: postgis/postgis:17-3.3
+    image: postgis/postgis:17-3.5
     container_name: pg_replica
     environment:
       - POSTGRES_USER=postgres
